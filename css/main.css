@@ -971,35 +971,27 @@ pre .javascript .function {
   overflow: hidden;
 }
 .back-to-top {
-  background: #222;
-  bottom: -100px;
-  box-sizing: border-box;
-  color: #fff;
+  background: #eee;
   cursor: pointer;
   font-size: 12px;
+  margin: 8px -10px -20px;
   opacity: 0.6;
-  padding: 0 6px;
-  position: fixed;
-  right: 30px;
   text-align: center;
-  transition-property: bottom;
-  width: 24px;
-  z-index: 1050;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
+  visibility: hidden;
 }
 .back-to-top:hover {
-  color: #fc6423;
-}
-.back-to-top.back-to-top-on {
-  bottom: 30px;
+  opacity: 0.8;
 }
 @media (max-width: 991px) {
   .back-to-top {
-    opacity: 0.8;
-    right: 20px;
+    display: none;
   }
+}
+.back-to-top.back-to-top-on {
+  visibility: visible;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .header {
   background: transparent;
@@ -1531,6 +1523,13 @@ pre .javascript .function {
 .page-post-detail .post-type-quote .post-tags {
   display: none;
 }
+.post-copyright {
+  background-color: #f9f9f9;
+  border-left: 3px solid #ff1700;
+  list-style: none;
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1617,7 +1616,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #06444f;
+  background: #6511ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
